@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser' // para leer los datos que vengan con el request desde el frontend
-import { question, auth } from './routes'
+import { question, auth, post } from './routes'
 
 const app = express()
 
@@ -18,7 +18,8 @@ if (process.env.NODE_ENV === 'development') { // para pedir que otro sitio pida 
   })
 }
 
-app.use('/api/questions', question)
 app.use('/api/auth', auth)
+app.use('/api/posts', post)
+app.use('/api/questions', question)
 
 export default app
