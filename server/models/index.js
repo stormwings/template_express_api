@@ -1,4 +1,7 @@
 export { default as User } from './user'
+export { default as Profile } from './profile'
+export { default as Visa } from './visa'
+export { default as Requirment } from './requirment'
 export { default as Post } from './post'
 export { default as Answer } from './answer'
 export { default as Question } from './question'
