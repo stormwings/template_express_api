@@ -9,4 +9,6 @@ const VisaSchema = new Schema({
   requirements: [{ type: ObjectId, ref: 'Requirment', default: [] }],
 })
 
-export default mongoose.model('Visa', VisaSchema)
+const Visa = mongoose.model('Visa', VisaSchema)
+
+export default Visa

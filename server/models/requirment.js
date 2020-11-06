@@ -10,4 +10,6 @@ const RequirmentSchema = new Schema({
   completed: { type: Boolean, required: true },
 })
 
-export default mongoose.model('Requirment', RequirmentSchema)
+const Requirment = mongoose.model('Requirment', RequirmentSchema)
+
+export default Requirment

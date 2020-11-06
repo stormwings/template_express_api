@@ -11,5 +11,3 @@ const AnswerSchema = Schema({
 const Answer = mongoose.model('Answer', AnswerSchema)
 
 export default Answer
-
-//export default mongoose.model('Answer', AnswerSchema)

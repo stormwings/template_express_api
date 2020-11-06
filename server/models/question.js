@@ -11,4 +11,6 @@ const QuestionSchema = new Schema({
   answers: [{ type: ObjectId, ref: 'Answer', default: [] }]
 })
 
-export default mongoose.model('Question', QuestionSchema)
+const Question = mongoose.model('Question', QuestionSchema)
+
+export default Question
